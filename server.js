@@ -23,12 +23,15 @@ controller.setupWebserver(port, function (err, webserver) {
 })
 
 
-controller.hears(['Help'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Okay! here we go')})
-
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
+  bot.reply(message, 'Hello! Hope you are having a great day to day, Let me help you in your Shopping. So what you need? lets start shopping')})
+  
+  
+  
+
+controller.hears(['Help', 'help me', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'Hello!')
-  bot.reply(message, 'I am here to help you, need help? just ask HELP')
+  bot.reply(message, 'Okay! here we go. Just follow these steps')
   bot.reply(message, {
     attachment: {
       type: 'template',
