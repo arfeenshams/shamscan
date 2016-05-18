@@ -39,6 +39,13 @@ controller.hears(['contact', 'i contact', 'to contact', 'Cell Number', 'Contacti
 
 controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, message) {
   bot.reply(message, 'i dont mind, keep going')})
+  
+
+
+controller.hears(['drinks','drink','in drinks'], 'message_received', function (bot, message) {
+  bot.reply(message, 'i dont mind, keep going')})
+  
+
 
 
 controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
@@ -66,9 +73,6 @@ controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'N
     }
   })
 })
-
-
-
 
 controller.on('facebook_postback', function (bot, message) {
   switch (message.payload) {
