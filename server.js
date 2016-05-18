@@ -45,7 +45,7 @@ controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats ne
   bot.reply(message, 'We currently having nothing new... we will inform you soon')})
   
 
-controller.hears(['i need contact', 'i need your', 'i need your cell phone number', 'i want to contact', 'i am trying to contact you', 'i contact', 'to contact', 'Cell Number', 'Contacting You', 'Contact you?', 'Number?'], 'message_received', function (bot, message) {
+controller.hears(['i need contact', 'i need your', 'i need your number', 'i need your contact', 'i need number', 'i need your cell phone number', 'i want to contact', 'i am trying to contact you', 'i contact', 'to contact', 'Cell Number', 'Contacting You', 'Contact you?', 'Number?'], 'message_received', function (bot, message) {
   bot.reply(message, 'You can Contact us anytime at : (Cell # 0333 1542230, Email: cs@rfeen.com), just leave a message and we will contact you soon...')})
   
 
