@@ -108,6 +108,9 @@ controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'N
   })
 })
 
+
+
+
 controller.on('facebook_postback', function (bot, message) {
   switch (message.payload) {
     case 'show_cat':
@@ -130,5 +133,14 @@ controller.on('facebook_postback', function (bot, message) {
         }
       })
       break
+	case 'soft_drinks':
+      bot.reply(message, {
+        attachment: {
+          type: 'image',
+          payload: {
+            url: 'https://media.giphy.com/media/Meirardzi0b1m/giphy.gif'
+          }
+        }
+      })
   }
 })
