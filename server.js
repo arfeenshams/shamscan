@@ -43,6 +43,11 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
   
 
 
+controller.hears(['price list', 'price of', 'cost price of', 'sale price of', 'sale price', 'cost price'], 'message_received', function (bot, message) {
+  bot.reply(message, 'Currently we are unable to help you in this regard')})
+  
+ 
+
 controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 'to deliver', 'deliver products', 'deliver items', 'charge on delivery', 'cost of delivering products', 'charges per delivery', 'home delivery', 'deliver home', 'falt rate', 'delivery cost', 'cost of delivery', 'expenses on delivery', 'delivery expenditures'], 'message_received', function (bot, message) {
   bot.reply(message, 'we charge Rs.45/- as flat rate on each delivery')
   bot.reply(message, 'Normal delivery is made between 5pm - 8:30pm')
