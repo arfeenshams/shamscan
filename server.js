@@ -24,10 +24,7 @@ controller.setupWebserver(port, function (err, webserver) {
 
 
 controller.hears(['Help'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Okay! here we go')
-  bot.reply(message, 'First add some items to your Cart, this is simple. you can add any item just by clicking the Add to Cart Button below every Product')
-  
-})
+  bot.reply(message, 'Okay! here we go')})
 
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
   bot.reply(message, 'Hello!')
