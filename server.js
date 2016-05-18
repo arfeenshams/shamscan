@@ -44,7 +44,9 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
 
 
 controller.hears(['price','price list', 'price of', 'cost price of', 'sale price of', 'sale price', 'cost price'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Currently we are unable to help you in this regard')})
+  bot.reply(message, 'Currently we are unable to help you in this regard')
+  bot.reply(message, 'you can check our website for uptodate information')
+  bot.reply(message, 'visit www.rfeen.com')})
   
  
 
