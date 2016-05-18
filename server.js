@@ -57,7 +57,7 @@ controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 't
   bot.reply(message, 'Delivery is made on the same day of order')})
   
   
-controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
+controller.hears(['Help', 'help me', 'how to', 'to order', 'how order', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'i will help you out')
   bot.reply(message, 'Okay! here we go. Just follow these steps')
   bot.reply(message, {
