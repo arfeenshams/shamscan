@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbrevoort/simple-fb-bot.git"
+    "url": "git+https://github.com/arfeenshams/shamscan.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mbrevoort/simple-fb-bot/issues"
+    "url": "https://github.com/arfeenshams/shamscan/issues"
   },
-  "homepage": "https://github.com/mbrevoort/simple-fb-bot#readme",
+  "homepage": "https://github.com/arfeenshams/shamscan#readme",
   "dependencies": {
     "botkit": "^0.1.1"
   }
