@@ -77,7 +77,6 @@ controller.hears(['drinks','drink','in drinks'], 'message_received', function (b
       }
     }
   })
-  })
   
 
 
