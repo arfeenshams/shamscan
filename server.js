@@ -37,6 +37,9 @@ controller.hears(['contact', 'i contact', 'to contact', 'Cell Number', 'Contacti
   
 
 
+controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, message) {
+  bot.reply(message, 'i dont mind, keep going')})
+  
 
 
 
