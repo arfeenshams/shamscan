@@ -41,13 +41,6 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
   bot.reply(message, 'i dont mind, keep going')})
   
 
-
-controller.hears(['drinks','drink','in drinks'], 'message_received', function (bot, message) {
-  bot.reply(message, 'i dont mind, keep going')})
-  
-
-
-
 controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'i'm here to help you!)
   bot.reply(message, 'Okay! here we go. Just follow these steps')
