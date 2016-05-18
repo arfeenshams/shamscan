@@ -36,11 +36,6 @@ controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats ne
   bot.reply(message, 'We currently having nothing new... we will inform you soon')})
   
 
-controller.hears(['you are', 'are you'], 'message_received', function (bot, message) {
-  bot.reply(message, 'its about helping you and not me')})
-  
-
-
 controller.hears(['contact', 'i contact', 'to contact', 'Cell Number', 'Contacting You', 'Contact you?', 'Number?'], 'message_received', function (bot, message) {
   bot.reply(message, 'You can Contact us anytime at : (Cell # 0333 1542230, Email: cs@rfeen.com), just leave a message and we will contact you soon...')})
   
