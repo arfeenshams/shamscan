@@ -44,8 +44,10 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
 
 
 controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 'to deliver', 'deliver products', 'deliver items', 'charge on delivery', 'cost of delivering products', 'charges per delivery', 'home delivery', 'deliver home', 'falt rate', 'delivery cost', 'cost of delivery', 'expenses on delivery', 'delivery expenditures'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Flat rate charges remains the same in all cases or on all amount')
-  bot.reply(message, 'Delivery on same day, Rs.45 is charged on each single delivery. Each delivery can have many Products')})
+  bot.reply(message, 'we charge Rs.45/- as flat rate on each delivery')
+  bot.reply(message, 'Normal delivery is made between 5pm - 8:30pm')
+  bot.reply(message, 'Fast Delivery is made within 30 minutes, Extra charges are applied on this delivery')
+  bot.reply(message, 'Delivery is made on the same day of order')})
   
 
 
