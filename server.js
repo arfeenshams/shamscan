@@ -49,7 +49,7 @@ controller.hears(['drinks','drink','in drinks'], 'message_received', function (b
       type: 'template',
       payload: {
         template_type: 'button',
-        text: 'What flavor of drink would you like to buy?  We have: (​*soft-drinks*​, ​*Juices*​, ​*Serups*​, or ​*Other*​)',
+        text: 'What flavor of drink would you like to buy?  We have:',
         buttons: [
           {
             type: 'postback',
