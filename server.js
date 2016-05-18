@@ -51,6 +51,14 @@ controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 't
   
 
 
+
+controller.hears(['Price', 'Price of', ''s price', 'price list', 'list of prices', 'pricelist'], 'message_received', function (bot, message) {
+  bot.reply(message, 'i dont mind, keep going')})
+  
+  
+
+
+
 controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'i will help you out')
   bot.reply(message, 'Okay! here we go. Just follow these steps')
