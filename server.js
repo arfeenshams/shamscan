@@ -24,6 +24,12 @@ controller.setupWebserver(port, function (err, webserver) {
 
 
 
+controller.hears(['i need', 'send me', 'send to me', 'buy me', 'to my home', 'at my address', 'to my address'], 'message_received', function (bot, message) {
+  bot.reply(message, 'Please list down your required products and send it with your Information.')
+  bot.reply(message, 'Example: My Info. Mr. Iqbal Mustafa, Cell # 0333 1234567, House #55, Street #23, New City Phase # 2, Wah cantt.')})
+
+
+
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
   bot.reply(message, 'Hello! hope you are fine, can i help you? just ask here...')})
   
