@@ -24,7 +24,7 @@ controller.setupWebserver(port, function (err, webserver) {
 
 
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Hello! it's a nice day today, how about buying some Grocery from us?')})
+  bot.reply(message, 'Hello! hope you are fine')})
   
   
   
