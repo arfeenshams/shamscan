@@ -38,7 +38,7 @@ controller.hears(['billing address','shipping address', 'biling adres', 'shiping
 
 
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Hello! hope you are fine, can i help you? just ask here...')})
+  bot.reply(message, 'Hay!!! You Need Help?')})
   
   
 controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats new?', 'show me updates'], 'message_received', function (bot, message) {
