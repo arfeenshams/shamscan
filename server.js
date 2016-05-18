@@ -25,9 +25,8 @@ controller.setupWebserver(port, function (err, webserver) {
 
 
 controller.hears(['i need', 'send me', 'send to me', 'buy me', 'to my home', 'at my address', 'to my address'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Enter your Products separated by commas. Example: Sugar 5kg, Dalda 5kg x 2, atta/flour 20kg, Marhaba Honey 500 grams, Dove Soap x 3, one facial moisturizer')
-  bot.reply(message, 'On what address should we deliver your products.')
-  bot.reply(message, 'Enter Your Active Cell Phone Number.')})
+  bot.reply(message, 'visit www.rfeen.com/shop')
+  bot.reply(message, 'Currently we are unable to receive Orders in Messenger')})
 
 
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
