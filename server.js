@@ -52,8 +52,8 @@ controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 't
 
 
 
-controller.hears(['Price', 'Price of', ''s price', 'price list', 'list of prices', 'pricelist'], 'message_received', function (bot, message) {
-  bot.reply(message, 'i dont mind, keep going')})
+controller.hears(['Price', 'Price of', 'price list', 'list of prices', 'pricelist'], 'message_received', function (bot, message) {
+  bot.reply(message, 'We are working on it, you will be informed about prices on demand soon...')})
   
   
 
