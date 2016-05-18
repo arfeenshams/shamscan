@@ -43,7 +43,41 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
 
 
 controller.hears(['drinks','drink','in drinks'], 'message_received', function (bot, message) {
-  bot.reply(message, 'i dont mind, keep going')})
+  bot.reply(message, 'We have a great variety of Drinks')
+  bot.reply(message, {
+    attachment: {
+      type: 'template',
+      payload: {
+        template_type: 'button',
+        text: 'What flavor of drink would you like to buy?  We have: (​*soft-drinks*​, ​*Juices*​, ​*Serups*​, or ​*Other*​)',
+        buttons: [
+          {
+            type: 'postback',
+            title: 'Soft Drinks',
+            payload: 'soft_drinks'
+          },
+          {
+            type: 'postback',
+            title: 'Juices',
+            payload: 'Juices'
+          },
+		  {
+            type: 'postback',
+            title: 'Serups',
+            payload: 'Serups'
+          },
+		  {
+            type: 'postback',
+            title: 'Other',
+            payload: 'other'
+          }
+		  
+		  
+        ]
+      }
+    }
+  })
+  })
   
 
 
