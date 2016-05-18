@@ -49,16 +49,7 @@ controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 't
   bot.reply(message, 'Fast Delivery is made within 30 minutes, Extra charges are applied on this delivery')
   bot.reply(message, 'Delivery is made on the same day of order')})
   
-
-
-
-controller.hears(['Price', 'Price of', 'price list', 'list of prices', 'pricelist'], 'message_received', function (bot, message) {
-  bot.reply(message, 'We are not in a position to tell you right now')})
   
-  
-
-
-
 controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'i will help you out')
   bot.reply(message, 'Okay! here we go. Just follow these steps')
