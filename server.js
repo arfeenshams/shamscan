@@ -31,8 +31,8 @@ controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats ne
   bot.reply(message, 'We currently having nothing new... we will inform you soon')})
   
 
-controller.hears(['You', 'you are', 'are you', ''], 'message_received', function (bot, message) {
-  bot.reply(message, 'its about helping you not me')})
+controller.hears(['You?', 'you are', 'are you', ''], 'message_received', function (bot, message) {
+  bot.reply(message, 'its about helping you and not me')})
   
   
 
