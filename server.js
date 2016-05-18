@@ -34,11 +34,17 @@ controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats ne
 controller.hears(['You?', 'you are', 'are you', ''], 'message_received', function (bot, message) {
   bot.reply(message, 'its about helping you and not me')})
   
+
+
+controller.hears(['contact', 'Cell Number', 'Contacting You', 'Contact you?', 'Number?'], 'message_received', function (bot, message) {
+  bot.reply(message, 'You can Contact us anytime at : (Cell # 0333 1542230, Email: cs@rfeen.com), just leave a message and we will contact you soon...')})
   
 
 
 
-controller.hears(['Help', 'help me', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
+
+
+controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'Hello!')
   bot.reply(message, 'Okay! here we go. Just follow these steps')
   bot.reply(message, {
