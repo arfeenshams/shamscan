@@ -22,7 +22,7 @@ controller.setupWebserver(port, function (err, webserver) {
   })
 })
 
-controller.hears(['hello', 'hi'], 'message_received', function (bot, message) {
+controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
   bot.reply(message, 'Hello!')
   bot.reply(message, 'I want to show you something')
   bot.reply(message, {
