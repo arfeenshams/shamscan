@@ -40,6 +40,14 @@ controller.hears(['contact', 'i contact', 'to contact', 'Cell Number', 'Contacti
 controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, message) {
   bot.reply(message, 'i dont mind, keep going')})
   
+  
+
+
+controller.hears(['delivery charges', 'charge on delivery', 'cost of delivering products', 'charges per delivery', 'home delivery', 'deliver home', 'falt rate', 'delivery cost', 'cost of delivery', 'expenses on delivery', 'delivery expenditures'], 'message_received', function (bot, message) {
+  bot.reply(message, 'Flat rate charges remains the same in all cases or on all amount')
+  bot.reply(message, 'Delivery on same day, Rs.45 is charged on each single delivery. Each delivery can have many Products')
+  
+
 
 controller.hears(['Help', 'help me', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'i will help you out')
