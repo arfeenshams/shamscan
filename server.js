@@ -43,7 +43,7 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
   
 
 
-controller.hears(['price list', 'price of', 'cost price of', 'sale price of', 'sale price', 'cost price'], 'message_received', function (bot, message) {
+controller.hears(['price','price list', 'price of', 'cost price of', 'sale price of', 'sale price', 'cost price'], 'message_received', function (bot, message) {
   bot.reply(message, 'Currently we are unable to help you in this regard')})
   
  
