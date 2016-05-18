@@ -29,6 +29,14 @@ controller.hears(['i need', 'send me', 'send to me', 'buy me', 'to my home', 'at
   bot.reply(message, 'Currently we are unable to receive Orders in Messenger')})
 
 
+
+controller.hears(['billing address','shipping address', 'biling adres', 'shiping adres'], 'message_received', function (bot, message) {
+  bot.reply(message, 'The shipping address is where you want your items delivered. This can be the same as your billing address, or it can be different.')
+  bot.reply(message, 'Billing address is where we collect the Amount')})
+
+
+
+
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
   bot.reply(message, 'Hello! hope you are fine, can i help you? just ask here...')})
   
