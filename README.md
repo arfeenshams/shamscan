@@ -1,1 +1,1 @@
-# shamscan
+# simple-fb-bot
