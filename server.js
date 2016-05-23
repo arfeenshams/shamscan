@@ -56,7 +56,7 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
   
 controller.hears(['thank', 'Talk to you soon', 'See you next time', 'Gotta go!', 'thanks', 'thanks you', 'thanks alot', 'OK T.C.', 'TC', 'BYE', 'Allah Hafiz', 'tata', 'take care', 'i'm leaving', 'i have to go', 'good bye'], 'message_received', function (bot, message) {
   bot.reply(message, 'Thanks alot for your visit...')
-  bot.reply(message, 'We will try to provide )
+  bot.reply(message, 'Please let me know if I can ever be of service to you. See you Soon'  )
   bot.reply(message, 'Dont forget to Save our Contact Number (0333 1542230) in your cell phone to stay in touch with us.'      )})
   
 
