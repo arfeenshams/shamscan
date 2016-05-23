@@ -73,7 +73,7 @@ controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 't
   bot.reply(message, 'Fast Delivery is made within 30 minutes, Extra charges are applied on this delivery')
   bot.reply(message, 'Delivery is made on the same day of order')})
   
-controller.hears(['cart', 'my cart', 'user cart', 'show me my products list', 'what have i added to my cart', 'added to my cart', 'added to my list', 'how many have i added to my cart', 'how many have you added to my cart', 'how many items are in my cart', 'in my cart'], 'message_received', function (bot, message) {
+controller.hears(['cart', 'show my cart', 'show me cart', 'in my cart', 'my cart', 'user cart', 'show me my products list', 'what have i added to my cart', 'added to my cart', 'added to my list', 'how many have i added to my cart', 'how many have you added to my cart', 'how many items are in my cart', 'in my cart'], 'message_received', function (bot, message) {
   bot.reply(message, 'Sorry... currently we are unable to show you cart in messenger. but you can check the link')
   bot.reply(message, 'www.rfeen.com/cart')
   
