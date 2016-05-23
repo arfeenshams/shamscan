@@ -75,8 +75,7 @@ controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 't
   
 controller.hears(['cart', 'show my cart', 'show me cart', 'in my cart', 'my cart', 'what have i added to my cart', 'added to my cart', 'added to my list', 'how many have i added to my cart', 'how many have you added to my cart', 'how many items are in my cart', 'in my cart'], 'message_received', function (bot, message) {
   bot.reply(message, 'Sorry... currently we are unable to show you cart in messenger. but you can check the link')
-  bot.reply(message, 'www.rfeen.com/cart')
-  )})
+  bot.reply(message, 'www.rfeen.com/cart')})
   
 controller.hears(['Help', 'help me', 'how to', 'to order', 'how order', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'i will help you out')
