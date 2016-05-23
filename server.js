@@ -57,7 +57,7 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
 controller.hears(['thank', 'Talk to you soon', 'See you next time', 'Gotta go!', 'thanks', 'thanks you', 'thanks alot', 'OK T.C.', 'TC', 'BYE', 'Allah Hafiz', 'tata', 'take care', 'i'm leaving', 'i have to go', 'good bye'], 'message_received', function (bot, message) {
   bot.reply(message, 'Thanks alot for your visit...')
   bot.reply(message, 'Please let me know if I can ever be of service to you. See you Soon'  )
-  bot.reply(message, 'Dont forget to Save our Contact Number (0333 1542230) in your cell phone to stay in touch with us.'      )})
+  bot.reply(message, 'Dont forget to Save our Contact Number (0333 1542230) in your cell phone to stay in touch with us.')})
   
 
 controller.hears(['price','price list', 'price of', 'cost price of', 'sale price of', 'sale price', 'cost price'], 'message_received', function (bot, message) {
@@ -73,10 +73,10 @@ controller.hears(['delivery charges', 'delivery timming', 'time of delivery', 't
   bot.reply(message, 'Fast Delivery is made within 30 minutes, Extra charges are applied on this delivery')
   bot.reply(message, 'Delivery is made on the same day of order')})
   
-controller.hears(['cart', 'show my cart', 'show me cart', 'in my cart', 'my cart', 'user cart', 'show me my products list', 'what have i added to my cart', 'added to my cart', 'added to my list', 'how many have i added to my cart', 'how many have you added to my cart', 'how many items are in my cart', 'in my cart'], 'message_received', function (bot, message) {
+controller.hears(['cart', 'show my cart', 'show me cart', 'in my cart', 'my cart', 'what have i added to my cart', 'added to my cart', 'added to my list', 'how many have i added to my cart', 'how many have you added to my cart', 'how many items are in my cart', 'in my cart'], 'message_received', function (bot, message) {
   bot.reply(message, 'Sorry... currently we are unable to show you cart in messenger. but you can check the link')
   bot.reply(message, 'www.rfeen.com/cart')
-  
+  )})
   
 controller.hears(['Help', 'help me', 'how to', 'to order', 'how order', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, 'i will help you out')
