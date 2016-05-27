@@ -43,7 +43,7 @@ controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 
   bot.reply(message, 'Hay!!! You Need Help?')})
   
 controller.hears(['Okay', 'okie', 'ok', 'okayy', 'okey', 'k'], 'message_received', function (bot, message) {
-  bot.reply(message, ':)')})
+  bot.reply(message, 'hmmm')})
   
 controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats new?', 'show me updates'], 'message_received', function (bot, message) {
   bot.reply(message, 'We currently having nothing new... we will inform you soon')})
@@ -82,6 +82,10 @@ controller.hears(['cart', 'show my cart', 'show me cart', 'in my cart', 'my cart
   bot.reply(message, 'www.rfeen.com/cart')})
   
 controller.hears(['Help', 'help me', 'how to', 'to order', 'how order', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
+  bot.reply(message, '0333 1542230')
+  bot.reply(message, 'Contact our Admin for any kind of queries')})
+  
+controller.hears([''], 'message_received', function (bot, message) {
   bot.reply(message, 'i will help you out')
   bot.reply(message, 'Okay! here we go. Just follow these steps')
   bot.reply(message, {
