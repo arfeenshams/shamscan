@@ -36,7 +36,8 @@ controller.hears(['billing address','shipping address', 'biling adres', 'shiping
   bot.reply(message, 'The shipping address is where you want your items delivered. This can be the same as your billing address, or it can be different.')
   bot.reply(message, 'Billing address is where we collect the Amount')})
 
-
+controller.hears(['my name is'], 'message_received', function (bot, message) {
+  bot.reply(message, 'Nice name')})
 
 
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
@@ -86,30 +87,8 @@ controller.hears(['Help', 'help me', 'how to', 'to order', 'how order', 'can you
   bot.reply(message, 'Contact our Admin for any kind of queries')})
   
 controller.hears([''], 'message_received', function (bot, message) {
-  bot.reply(message, 'i will help you out')
-  bot.reply(message, 'Okay! here we go. Just follow these steps')
-  bot.reply(message, {
-    attachment: {
-      type: 'template',
-      payload: {
-        template_type: 'button',
-        text: 'Which do you prefer',
-        buttons: [
-          {
-            type: 'postback',
-            title: 'Cats',
-            payload: 'show_cat'
-          },
-          {
-            type: 'postback',
-            title: 'Dogs',
-            payload: 'show_dog'
-          }
-        ]
-      }
-    }
-  })
-})
+  bot.reply(message, 'i think i dont understand you full')
+  bot.reply(message, 'Please be specific. and write full meaningfull sentences')})
 
 controller.on('facebook_postback', function (bot, message) {
   switch (message.payload) {
