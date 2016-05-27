@@ -57,9 +57,7 @@ controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 
   bot.reply(message, 'Hay!!! How Can i Help You?')})
   
 controller.hears(['Okay', 'okie', 'ok', 'okayy', 'okey'], 'message_received', function (bot, message) {
-  bot.reply(message, '1')}
-  bot.reply(message, '2')}
-  bot.reply(message, '3')})
+  bot.reply(message, 'hmmm')})
   
 controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats new?', 'show me updates'], 'message_received', function (bot, message) {
   bot.reply(message, 'We currently having nothing new... we will inform you soon')})
