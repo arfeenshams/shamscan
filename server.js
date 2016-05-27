@@ -21,7 +21,17 @@ controller.setupWebserver(port, function (err, webserver) {
   })
 })
 
-controller.hears(['What is rfeen.com?', 'What business you deal in?', 'What do you Sell?', 'rfeen.com?', 'who are you?', 'who is rfeen?', 'what is rfeen?'], 'message_received', function (bot, message) {
+
+
+controller.hears(['what do you sell?', 'what do you have?', 'what products do you deal in?', 'what catagories of products you deal in?', 'what catagories do you have?'], 'message_received', function (bot, message) {
+  bot.reply(message, 'Grocery')
+  bot.reply(message, 'Grocery')
+  bot.reply(message, 'Grocery')
+  bot.reply(message, 'Grocery')
+  bot.reply(message, '')})
+
+
+controller.hears(['What is rfeen.com?', 'rfeen.com?', 'who are you?', 'who is rfeen?', 'what is rfeen?'], 'message_received', function (bot, message) {
   bot.reply(message, 'visit www.rfeen.com')
   bot.reply(message, 'rFeen.com is your one stop shop for anything you want ranging from grocery items to household products, from snacks & confectionary to goods of personal care. You will find everything under one roof virtually. rFeen.com is your ultimate destination for shopping online. Lets do grocery.')})
 
