@@ -14,7 +14,6 @@ var controller = Botkit.facebookbot({
 })
 
 var bot = controller.spawn()
-
 controller.setupWebserver(port, function (err, webserver) {
   if (err) return console.log(err)
   controller.createWebhookEndpoints(webserver, bot, function () {
@@ -26,7 +25,7 @@ controller.hears(['What is rfeen.com?', 'What business you deal in?', 'What do y
   bot.reply(message, 'visit www.rfeen.com')
   bot.reply(message, 'rFeen.com is your one stop shop for anything you want ranging from grocery items to household products, from snacks & confectionary to goods of personal care. You will find everything under one roof virtually. rFeen.com is your ultimate destination for shopping online. Lets do grocery.')})
 
-controller.hears(['i want', 'send me', 'send to me', 'buy me', 'to my home', 'at my address', 'to my address'], 'message_received', function (bot, message) {
+controller.hears(['i want', 'i need', 'send me', 'send to me', 'buy me', 'to my home', 'at my address', 'to my address'], 'message_received', function (bot, message) {
   bot.reply(message, 'visit www.rfeen.com/shop')
   bot.reply(message, 'Currently we are unable to receive Orders in Messenger')})
 
@@ -54,7 +53,7 @@ controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats ne
   bot.reply(message, 'We currently having nothing new... we will inform you soon')})
   
 
-controller.hears(['number', 'contact', 'contact?', 'number?', 'i need contact', 'i need your', 'i need your number', 'i need your contact', 'i need number', 'i need your cell phone number', 'i want to contact', 'i am trying to contact you', 'i contact', 'to contact', 'Cell Number', 'Contacting You', 'Contact you?', 'Number?'], 'message_received', function (bot, message) {
+controller.hears(['number', 'contact', 'contact?', 'number?', 'i need your number', 'i need your contact', 'i need number', 'i need your cell phone number', 'i want to contact', 'i am trying to contact you', 'i contact', 'to contact', 'Cell Number', 'Contacting You', 'Contact you?', 'Number?'], 'message_received', function (bot, message) {
   bot.reply(message, 'You can Contact us anytime at : (Cell # 0333 1542230, Email: cs@rfeen.com), just leave a message and we will contact you soon...')})
   
 
