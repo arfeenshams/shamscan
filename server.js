@@ -66,7 +66,7 @@ controller.hears(['in love with you', 'i love you', 'love you'], 'message_receiv
   
     
   
-controller.hears(['toi marasay', 'Gand maro', 'Toi Maro', 'Teri Bund'], 'message_received', function (bot, message) {
+controller.hears(['toi marasay', 'gando', 'Gand maro', 'Toi Maro', 'Teri Bund'], 'message_received', function (bot, message) {
   bot.reply(message, 'Please...')})
   
 
