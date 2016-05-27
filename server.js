@@ -24,11 +24,13 @@ controller.setupWebserver(port, function (err, webserver) {
 
 
 controller.hears(['what do you sell?', 'what do you have?', 'what products do you deal in?', 'what catagories of products you deal in?', 'what catagories do you have?'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Grocery')
-  bot.reply(message, 'Grocery')
-  bot.reply(message, 'Grocery')
-  bot.reply(message, 'Grocery')
-  bot.reply(message, '')})
+  bot.reply(message, '@Grocery')
+  bot.reply(message, '@Food')
+  bot.reply(message, '@Drinks')
+  bot.reply(message, '@PersonalCare')
+  bot.reply(message, '@Household')
+  bot.reply(message, '@Laundry')
+  bot.reply(message, 'For further list of Sub-catagories, simply write @drinks for sub-catagories of drinks and for other use the above mentioned codes.')})
 
 
 controller.hears(['What is rfeen.com?', 'rfeen.com?', 'who are you?', 'who is rfeen?', 'what is rfeen?'], 'message_received', function (bot, message) {
