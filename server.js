@@ -90,27 +90,3 @@ controller.hears([''], 'message_received', function (bot, message) {
   bot.reply(message, 'i think i dont understand you full')
   bot.reply(message, 'Please be specific. and write full meaningfull sentences')})
 
-controller.on('facebook_postback', function (bot, message) {
-  switch (message.payload) {
-    case 'show_cat':
-      bot.reply(message, {
-        attachment: {
-          type: 'image',
-          payload: {
-            url: 'https://media.giphy.com/media/5xaOcLT4VhjRfudPcS4/giphy.gif'
-          }
-        }
-      })
-      break
-    case 'show_dog':
-      bot.reply(message, {
-        attachment: {
-          type: 'image',
-          payload: {
-            url: 'https://media.giphy.com/media/3o7ZeL5FH6Ap9jR9Kg/giphy.gif'
-          }
-        }
-      })
-      break
-  }
-})
