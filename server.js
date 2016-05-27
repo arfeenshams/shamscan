@@ -43,7 +43,7 @@ controller.hears(['rfeen.com?', 'rfeen?', 'what is rfeen?', 'what is rfeen.com',
 
 
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Hay!!! You Need Help?')})
+  bot.reply(message, 'Hay!!! how can i help you?')})
   
   
 controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats new?', 'show me updates'], 'message_received', function (bot, message) {
