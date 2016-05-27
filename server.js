@@ -37,7 +37,7 @@ controller.hears(['billing address','shipping address', 'biling adres', 'shiping
 
 controller.hears(['rfeen.com?', 'rfeen?', 'what is rfeen?', 'what is rfeen.com', 'what you do?', 'what do you Sell?'], 'message_received', function (bot, message) {
   bot.reply(message, 'Visit our Website www.rfeen.com for more information')
-  bot.reply(message, 'rfeen.com is your one stop shop for anything you want ranging from grocery items to household products, from snacks & confectionary to goods of personal care. You will find everything under one roof virtually. rfeen.com is your ultimate destination for shopping online. Let’s do grocery.)
+  bot.reply(message, 'rfeen.com is your one stop shop for anything you want ranging from grocery items to household products from snacks & confectionary to goods of personal care. You will find everything under one roof virtually. rfeen.com is your ultimate destination for shopping online. Lets do grocery.)
   bot.reply(message, 'Call us at 0333 1542230')})
   
 
