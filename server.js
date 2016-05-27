@@ -98,8 +98,3 @@ controller.hears(['cart', 'show my cart', 'show me cart', 'in my cart', 'my cart
 controller.hears(['Help', 'help me', 'how to', 'to order', 'how order', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
   bot.reply(message, '0333 1542230')
   bot.reply(message, 'Contact our Admin for any kind of queries')})
-  
-controller.hears([''], 'message_received', function (bot, message) {
-  bot.reply(message, 'i think i dont understand you full')
-  bot.reply(message, 'Please be specific. and write full meaningfull sentences')})
-
