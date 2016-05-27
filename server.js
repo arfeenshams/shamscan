@@ -35,15 +35,10 @@ controller.hears(['billing address','shipping address', 'biling adres', 'shiping
   bot.reply(message, 'Billing address is where we collect the Amount')})
 
 
-controller.hears(['rfeen.com?', 'rfeen?', 'what is rfeen?', 'what is rfeen.com', 'what you do?', 'what do you Sell?'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Visit our Website www.rfeen.com for more information')
-  bot.reply(message, 'rfeen.com is your one stop shop for anything you want ranging from grocery items to household products from snacks & confectionary to goods of personal care. You will find everything under one roof virtually. rfeen.com is your ultimate destination for shopping online. Lets do grocery.)
-  bot.reply(message, 'Call us at 0333 1542230')})
-  
 
 
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Hay!!! how can i help you?')})
+  bot.reply(message, 'Hay!!! You Need Help?')})
   
   
 controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats new?', 'show me updates'], 'message_received', function (bot, message) {
