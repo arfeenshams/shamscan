@@ -83,5 +83,52 @@ controller.hears(['cart', 'show my cart', 'show me cart', 'in my cart', 'my cart
   bot.reply(message, 'www.rfeen.com/cart')})
   
 controller.hears(['Help', 'help me', 'how to', 'to order', 'how order', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'How to Shop?'], 'message_received', function (bot, message) {
-  bot.reply(message, '0333 1542230')
-  bot.reply(message, 'for any kind of help just Contact our admin')})
+  bot.reply(message, 'i will help you out')
+  bot.reply(message, 'Okay! here we go. Just follow these steps')
+  bot.reply(message, {
+    attachment: {
+      type: 'template',
+      payload: {
+        template_type: 'button',
+        text: 'Which do you prefer',
+        buttons: [
+          {
+            type: 'postback',
+            title: 'Cats',
+            payload: 'show_cat'
+          },
+          {
+            type: 'postback',
+            title: 'Dogs',
+            payload: 'show_dog'
+          }
+        ]
+      }
+    }
+  })
+})
+
+controller.on('facebook_postback', function (bot, message) {
+  switch (message.payload) {
+    case 'show_cat':
+      bot.reply(message, {
+        attachment: {
+          type: 'image',
+          payload: {
+            url: 'https://media.giphy.com/media/5xaOcLT4VhjRfudPcS4/giphy.gif'
+          }
+        }
+      })
+      break
+    case 'show_dog':
+      bot.reply(message, {
+        attachment: {
+          type: 'image',
+          payload: {
+            url: 'https://media.giphy.com/media/3o7ZeL5FH6Ap9jR9Kg/giphy.gif'
+          }
+        }
+      })
+      break
+  }
+})
