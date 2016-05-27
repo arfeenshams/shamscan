@@ -29,9 +29,7 @@ controller.hears(['what do you sell?', 'what do you have?', 'what products do yo
   bot.reply(message, '@Drinks')
   bot.reply(message, '@PersonalCare')
   bot.reply(message, '@Household')
-  bot.reply(message, '@Laundry')
-  bot.reply(message, 'For further list of Sub-catagories, simply write @drinks for sub-catagories of drinks and for other use the above mentioned codes.')})
-
+  bot.reply(message, '@Laundry')})
 
 controller.hears(['What is rfeen.com?', 'rfeen.com?', 'who are you?', 'who is rfeen?', 'what is rfeen?'], 'message_received', function (bot, message) {
   bot.reply(message, 'visit www.rfeen.com')
@@ -59,7 +57,9 @@ controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 
   bot.reply(message, 'Hay!!! How Can i Help You?')})
   
 controller.hears(['Okay', 'okie', 'ok', 'okayy', 'okey'], 'message_received', function (bot, message) {
-  bot.reply(message, 'hmmm')})
+  bot.reply(message, '1')}
+  bot.reply(message, '2')}
+  bot.reply(message, '3')})
   
 controller.hears(['Updates', 'New', 'Latest products', 'new products', 'whats new?', 'show me updates'], 'message_received', function (bot, message) {
   bot.reply(message, 'We currently having nothing new... we will inform you soon')})
