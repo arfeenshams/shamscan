@@ -35,8 +35,9 @@ controller.hears(['What is rfeen.com?', 'rfeen.com?', 'who are you?', 'who is rf
   bot.reply(message, 'visit www.rfeen.com')
   bot.reply(message, 'rFeen.com is your one stop shop for anything you want ranging from grocery items to household products, from snacks & confectionary to goods of personal care. You will find everything under one roof virtually. rFeen.com is your ultimate destination for shopping online. Lets do grocery.')})
 
-controller.hears(['i want', 'i need', 'send me', 'send to me', 'buy me', 'to my home', 'at my address', 'to my address'], 'message_received', function (bot, message) {
+controller.hears(['i want', 'i need', 'send me', 'bring me', 'send to me', 'buy me', 'to my home', 'at my address', 'to my address'], 'message_received', function (bot, message) {
   bot.reply(message, 'visit www.rfeen.com/shop')
+    bot.reply(message, 'we are working on it')
   bot.reply(message, 'Currently we are unable to receive Orders in Messenger')})
 
 
