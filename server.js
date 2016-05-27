@@ -31,6 +31,10 @@ controller.hears(['send me', 'send to me', 'buy me', 'to my home', 'at my addres
   bot.reply(message, 'Currently we are unable to receive Orders in Messenger')})
 
 
+controller.hears(['Sex products', 'Sex Product', 'Sex'], 'message_received', function (bot, message) {
+  bot.reply(message, 'We dont sell sex stuff Yet)})
+
+
 
 controller.hears(['billing address','shipping address', 'biling adres', 'shiping adres'], 'message_received', function (bot, message) {
   bot.reply(message, 'The shipping address is where you want your items delivered. This can be the same as your billing address, or it can be different.')
