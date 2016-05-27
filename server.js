@@ -63,6 +63,12 @@ controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, messag
   bot.reply(message, 'i dont mind, keep going')})
   
   
+  
+controller.hears(['toi marasay', 'Gand maro', 'Toi Maro', 'Teri Bund'], 'message_received', function (bot, message) {
+  bot.reply(message, 'Please...')})
+  
+
+  
 controller.hears(['thank', 'Talk to you soon', 'See you next time', 'Gotta go!', 'thanks', 'thanks you', 'thanks alot', 'OK TC', 'TC', 'BYE', 'Allah Hafiz', 'tata', 'take care', 'i am leaving', 'i have to go', 'good bye'], 'message_received', function (bot, message) {
   bot.reply(message, 'Thanks alot for your visit...')
   bot.reply(message, 'Please let me know if I can ever be of service to you. See you Soon'  )
