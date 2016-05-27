@@ -22,7 +22,9 @@ controller.setupWebserver(port, function (err, webserver) {
   })
 })
 
-
+controller.hears(['What is rfeen.com?', 'What business you deal in?', 'What do you Sell?', 'rfeen.com?', 'who are you?', 'who is rfeen?', 'what is rfeen?'], 'message_received', function (bot, message) {
+  bot.reply(message, 'visit www.rfeen.com/shop')
+  bot.reply(message, 'Currently we are unable to receive Orders in Messenger')})
 
 controller.hears(['send me', 'send to me', 'buy me', 'to my home', 'at my address', 'to my address'], 'message_received', function (bot, message) {
   bot.reply(message, 'visit www.rfeen.com/shop')
