@@ -41,7 +41,7 @@ controller.hears(['my name is'], 'message_received', function (bot, message) {
 
 
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Hay!!! You Need Help?')})
+  bot.reply(message, 'Hay!!! How Can i Help You?')})
   
 controller.hears(['Okay', 'okie', 'ok', 'okayy', 'okey'], 'message_received', function (bot, message) {
   bot.reply(message, 'hmmm')})
