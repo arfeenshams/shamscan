@@ -59,7 +59,7 @@ controller.hears(['number', 'contact', 'contact?', 'number?', 'i need contact', 
   
 
 
-controller.hears(['Fuck you', 'fuck'], 'message_received', function (bot, message) {
+controller.hears(['Fuck you', 'fuck', 'painchood'], 'message_received', function (bot, message) {
   bot.reply(message, 'i dont mind, keep going')})
   
 controller.hears(['in love with you', 'i love you', 'love you'], 'message_received', function (bot, message) {
