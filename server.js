@@ -22,16 +22,6 @@ controller.setupWebserver(port, function (err, webserver) {
 })
 
 
-
-controller.hears(['what do you sell?', 'what do you have?', 'what products do you deal in?', 'Packages', 'Package', 'what packages you deal in?', 'what catagories do you have?'], 'message_received', function (bot, message) {
-  bot.reply(message, '@Grocery')
-  bot.reply(message, '@Food')
-  bot.reply(message, '@Drinks')
-  bot.reply(message, '@PersonalCare')
-  bot.reply(message, '@Household')
-  bot.reply(message, '@Laundry')})
-
-
 controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
   bot.reply(message, 'Hay, How can i help you?')
   bot.reply(message, 'For information regarding our upcoming events please visit www.fallclub.com/events')
