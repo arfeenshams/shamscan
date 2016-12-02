@@ -33,7 +33,7 @@ controller.hears(['What is Fall Club?', 'Fall Club?', 'who are you?', 'who is Fa
   bot.reply(message, 'visit www.FallClub.com')
   bot.reply(message, 'We help you Explore the world within your Budget.')})
 
-controller.hears(['rates', 'Price', 'Price List'], 'message_received', function (bot, message) {
+controller.hears(['Charges', 'how much you charge', 'rates', 'Price', 'Price List'], 'message_received', function (bot, message) {
   bot.reply(message, 'Price list is on the link.')
   bot.reply(message, 'visit www.fallclub.com/rates')})
 
