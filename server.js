@@ -44,7 +44,7 @@ controller.hears(['Okay', 'okie', 'ok', 'okayy', 'okey'], 'message_received', fu
   bot.reply(message, ':)')})
 
 controller.hears(['Please share my Pictures', 'pics', 'give me my pics', 'Pictures', 'Aoa pics nae mili abi tak','please send pictures', 'please photos', 'please upload pics', 'sir pic to share karain', 'Pictures Please', 'Our Pic', 'Our Pictures', 'Our Photos'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Thanks allot for joining. Check our Page, We have already uploaded Pictures of the Event. We will upload more pics soon on our Page inshallah. ')
+  bot.reply(message, 'Check our Page, We have already uploaded Pictures of the Event. We will upload more pics soon on our Page inshallah. ')
   bot.reply(message, 'To talk to ur person please leave a text at 0333 1542230')})
 
 controller.hears(['any family packages', 'any trip for family', 'for families', 'for family', 'trip for people', 'any event in this month', 'in this month', 'any trip', 'any upcoming trip', 'in next month', 'in next Month?', 'upcoming Events', 'is there Any Upcoming Events?', 'in January', 'in Feb', 'in February', 'in March', 'in April', 'in May', 'in June', 'in July', 'in August', 'in Sep', 'in September', 'in October', 'in Oct', 'in Nov', 'in november', 'in dec', 'in december'], 'message_received', function (bot, message) {
