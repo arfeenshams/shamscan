@@ -47,14 +47,13 @@ controller.hears(['Please share my Pictures', 'pics', 'give me my pics', 'Pictur
   bot.reply(message, 'Check our Page, We have already uploaded Pictures of the Event. We will upload more pics soon on our Page inshallah. ')
   bot.reply(message, 'To talk to ur person please leave a text at 0333 1542230')})
 
-controller.hears(['any family packages', 'any trip for family', 'for families', 'for family', 'trip for people', 'any event in this month', 'in this month', 'any trip', 'any upcoming trip', 'in next month', 'in next Month?', 'upcoming Events', 'is there Any Upcoming Events?', 'in January', 'in Feb', 'in February', 'in March', 'in April', 'in May', 'in June', 'in July', 'in August', 'in Sep', 'in September', 'in October', 'in Oct', 'in Nov', 'in november', 'in dec', 'in december'], 'message_received', function (bot, message) {
+controller.hears(['Any Tip', 'any trip in', 'next month', 'this month', 'current month', 'upcoming event', 'any family packages', 'any trip for family', 'for families', 'for family', 'trip for people', 'any event in this month', 'in this month', 'any trip', 'any upcoming trip', 'in next month', 'in next Month?', 'upcoming Events', 'is there Any Upcoming Events?', 'in January', 'in Feb', 'in February', 'in March', 'in April', 'in May', 'in June', 'in July', 'in August', 'in Sep', 'in September', 'in October', 'in Oct', 'in Nov', 'in november', 'in dec', 'in december'], 'message_received', function (bot, message) {
   bot.reply(message, 'For information regarding our upcoming trips, family packages or Events please visit www.fallclub.com/events')
   bot.reply(message, 'Or Leave a Text at 0333 1542230 our Person will call you back.')})
-  
+
 controller.hears(['Help', 'help me', 'how to', 'to Register', 'how register', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'Register kese hota hay', 'registeration kese hogi?', 'Registration?'], 'message_received', function (bot, message) {
   bot.reply(message, '0333 1542230')
   bot.reply(message, 'Contact our Admin for any kind of queries')})
- 
 
 controller.hears(['number', 'contact', 'contact?', 'number?', 'i need your number', 'i need your contact', 'i need number', 'i need your cell phone number', 'i want to contact', 'i am trying to contact you', 'i contact', 'to contact', 'Cell Number', 'Contacting You', 'Contact you?', 'Number?'], 'message_received', function (bot, message) {
   bot.reply(message, 'You can Contact us anytime at : (Cell # 0333 1542230, Email: cs@fallclub.com), just leave a message and we will contact you soon...')})
