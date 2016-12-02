@@ -49,7 +49,7 @@ controller.hears(['kaha ja rahy ho', 'kaha ka trip hay', 'agla trip kab?', 'koi 
   bot.reply(message, 'For information regarding our upcoming trips, family packages or Events please visit www.fallclub.com/events')
   bot.reply(message, 'Or Leave a Text at 0333 1542230 our Person will call you back.')})
 
-controller.hears(['Help', 'help me', 'how to', 'to Register', 'how register', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'Register kese hota hay', 'registeration kese hogi?', 'Registration?'], 'message_received', function (bot, message) {
+controller.hears(['Help', 'help me', 'how to', 'register me', 'to Register', 'how register', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'Register kese hota hay', 'registeration kese hogi?', 'Registration?'], 'message_received', function (bot, message) {
   bot.reply(message, '0333 1542230')
   bot.reply(message, 'Contact our Admin for any kind of queries')})
 
