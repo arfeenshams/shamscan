@@ -33,7 +33,7 @@ controller.hears(['What is Fall Club?', 'Fall Club?', 'who are you?', 'who is Fa
   bot.reply(message, 'visit www.FallClub.com')
   bot.reply(message, 'We help you Explore the world within your Budget.')})
 
-controller.hears(['i want', 'i need', 'send me', 'Give me rates', 'send to me', 'Give me', 'rates', 'Price', 'Price List'], 'message_received', function (bot, message) {
+controller.hears(['rates', 'Price', 'Price List'], 'message_received', function (bot, message) {
   bot.reply(message, 'Price list is on the link.')
   bot.reply(message, 'visit www.fallclub.com/rates')})
 
@@ -43,7 +43,7 @@ controller.hears(['my name is'], 'message_received', function (bot, message) {
 controller.hears(['Okay', 'okie', 'ok', 'okayy', 'okey'], 'message_received', function (bot, message) {
   bot.reply(message, ':)')})
 
-controller.hears(['Please share my Pictures', 'give me my pics', 'Pictures', 'Aoa pics nae mili abi tak','please send pictures', 'please photos', 'please upload pics', 'sir pic to share karain', 'Pictures Please', 'Our Pic', 'Our Pictures', 'Our Photos'], 'message_received', function (bot, message) {
+controller.hears(['Please share my Pictures', 'pics', 'give me my pics', 'Pictures', 'Aoa pics nae mili abi tak','please send pictures', 'please photos', 'please upload pics', 'sir pic to share karain', 'Pictures Please', 'Our Pic', 'Our Pictures', 'Our Photos'], 'message_received', function (bot, message) {
   bot.reply(message, 'Thanks allot for joining. Check our Page, We have already uploaded Pictures of the Event. We will upload more pics soon on our Page inshallah. ')
   bot.reply(message, 'To talk to ur person please leave a text at 0333 1542230')})
 
