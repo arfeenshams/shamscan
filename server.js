@@ -22,7 +22,7 @@ controller.setupWebserver(port, function (err, webserver) {
 })
 
 
-controller.hears(['hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
+controller.hears(['listen', 'hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
   bot.reply(message, 'Hay, How can i help you?')
   bot.reply(message, 'For information regarding our upcoming events please visit www.fallclub.com/events')
   bot.reply(message, 'If you are interested in registring yourself or your friends kindly visit www.fallclub.com/join')
