@@ -48,8 +48,8 @@ controller.hears(['Please share my Pictures', 'pics', 'give me my pics', 'Pictur
   bot.reply(message, 'To talk to ur person please leave a text at 0333 1542230')})
 
 controller.hears(['any family packages', 'any trip for family', 'for families', 'for family', 'trip for people', 'any event in this month', 'in this month', 'any trip', 'any upcoming trip', 'in next month', 'in next Month?', 'upcoming Events', 'is there Any Upcoming Events?', 'in January', 'in Feb', 'in February', 'in March', 'in April', 'in May', 'in June', 'in July', 'in August', 'in Sep', 'in September', 'in October', 'in Oct', 'in Nov', 'in november', 'in dec', 'in december'], 'message_received', function (bot, message) {
-  bot.reply(message, 'we charge Rs.45/- as flat rate on each delivery')
-  bot.reply(message, 'Delivery is made on the same day of order')})
+  bot.reply(message, 'For information regarding our upcoming trips, family packages or Events please visit www.fallclub.com/events')
+  bot.reply(message, 'Or Leave a Text at 0333 1542230 our Person will call you back.')})
   
 controller.hears(['Help', 'help me', 'how to', 'to Register', 'how register', 'can you help', 'Guide me', 'Need help', 'Need Guidance', 'How it works', 'Register kese hota hay', 'registeration kese hogi?', 'Registration?'], 'message_received', function (bot, message) {
   bot.reply(message, '0333 1542230')
