@@ -23,11 +23,7 @@ controller.setupWebserver(port, function (err, webserver) {
 
 
 controller.hears(['listen', 'hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Hay, How can i help you?')
-  bot.reply(message, 'For information regarding our upcoming events please visit www.fallclub.com/events')
-  bot.reply(message, 'If you are interested in registring yourself or your friends kindly visit www.fallclub.com/join')
-  bot.reply(message, 'For Rates or Price List visit www.fallclub.com/Rates')
-  bot.reply(message, 'To talk to ur person please leave a text at 0333 1542230')})
+  bot.reply(message, 'Hay, How can i help you?. For information regarding our upcoming events please visit www.fallclub.com/events. If you are interested in registring yourself or your friends kindly visit www.fallclub.com/join. For Rates or Price List visit www.fallclub.com/Rates, (To talk to ur person please leave a text at 0333 1542230)')})
 
 controller.hears(['What is Fall Club?', 'Fall Club?', 'who are you?', 'who is FallClub?', 'what is FallClub?'], 'message_received', function (bot, message) {
   bot.reply(message, 'visit www.FallClub.com')
