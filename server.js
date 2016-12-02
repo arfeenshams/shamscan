@@ -23,7 +23,7 @@ controller.setupWebserver(port, function (err, webserver) {
 
 
 controller.hears(['listen', 'hello', 'hi', 'hay', 'hey', 'salam', 'aoa', 'AOA', 'A.O.A'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Hay, How can i help you?. For information regarding our upcoming events please visit www.fallclub.com/events. If you are interested in registring yourself or your friends kindly visit www.fallclub.com/join. For Rates or Price List visit www.fallclub.com/Rates, (To talk to ur person please leave a text at 0333 1542230)')})
+  bot.reply(message, 'Hay, How can i help you?. Please visit www.fallclub.com/events for our upcoming events. For Registration visit www.fallclub.com/join. To check out our Rates/Price List visit www.fallclub.com/Rates, (To talk to ur person please leave a text at 0333 1542230)')})
 
 controller.hears(['What is Fall Club?', 'Fall Club?', 'who are you?', 'who is FallClub?', 'what is FallClub?'], 'message_received', function (bot, message) {
   bot.reply(message, 'visit www.FallClub.com')
@@ -41,7 +41,7 @@ controller.hears(['Okay', 'okie', 'ok', 'okayy', 'okey'], 'message_received', fu
 
 controller.hears(['Please share my Pictures', 'pics', 'give me my pics', 'Pictures', 'Aoa pics nae mili abi tak','please send pictures', 'please photos', 'please upload pics', 'sir pic to share karain', 'Pictures Please', 'Our Pic', 'Our Pictures', 'Our Photos'], 'message_received', function (bot, message) {
   bot.reply(message, 'Check our Page, We have already uploaded Pictures of the Event. We will upload more pics soon on our Page inshallah. ')
-  bot.reply(message, 'To talk to ur person please leave a text at 0333 1542230')})
+  bot.reply(message, 'To talk to our person please leave a text at 0333 1542230')})
 
 controller.hears(['Any Tip', 'any trip in', 'next month', 'this month', 'current month', 'upcoming event', 'any family packages', 'any trip for family', 'for families', 'for family', 'trip for people', 'any event in this month', 'in this month', 'any trip', 'any upcoming trip', 'in next month', 'in next Month?', 'upcoming Events', 'is there Any Upcoming Events?', 'in January', 'in Feb', 'in February', 'in March', 'in April', 'in May', 'in June', 'in July', 'in August', 'in Sep', 'in September', 'in October', 'in Oct', 'in Nov', 'in november', 'in dec', 'in december'], 'message_received', function (bot, message) {
   bot.reply(message, 'For information regarding our upcoming trips, family packages or Events please visit www.fallclub.com/events')
