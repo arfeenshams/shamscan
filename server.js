@@ -36,6 +36,9 @@ controller.hears(['Charges', 'how much you charge', 'rates', 'Price', 'Price Lis
 controller.hears(['my name is'], 'message_received', function (bot, message) {
   bot.reply(message, 'Nice name')})
 
+controller.hears(['gandu', 'gando', 'bc', 'bhenchod', 'raami', 'fucker', 'fuck face', 'Fuck'], 'message_received', function (bot, message) {
+  bot.reply(message, 'plz...b specific')})
+
 controller.hears(['Okay', 'okie', 'ok', 'okayy', 'okey'], 'message_received', function (bot, message) {
   bot.reply(message, ':)')})
 
